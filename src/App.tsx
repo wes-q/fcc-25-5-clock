@@ -1,33 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import TimerClock from './TimerClock'
 import './App.css'
+import tomato from './assets/tomato.svg'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <img className='tomato' src={tomato} alt="tomato" />
+      <h1>Pom<span className="material-symbols-outlined">timer</span>doro Tecnique</h1>
+      <h2 style={{ fontStyle: 'italic' }}>"A method for staying focused and mentally fresh"</h2>
+      <div className='center'>
+        <ol>
+          <li>Set a 25 minute session timer</li>
+          <li>Work on your task until the time is up</li>
+          <li>Take a 5 minute break</li>
+        </ol>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <TimerClock />
     </>
   )
 }

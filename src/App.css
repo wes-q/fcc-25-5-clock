@@ -40,3 +40,24 @@
 .read-the-docs {
   color: #888;
 }
+
+ol {
+  text-align: left;
+}
+
+.center {
+display: flex;
+justify-content: center;
+margin-bottom: 2rem;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake-anim {
+  animation: shake 0.5s ease-in-out;
+}
