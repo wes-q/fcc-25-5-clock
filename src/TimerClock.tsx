@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import beep from "./assets/Beep.wav";
+import beep from "./assets/beep.wav";
 
 
 const TimerClock = () => {
